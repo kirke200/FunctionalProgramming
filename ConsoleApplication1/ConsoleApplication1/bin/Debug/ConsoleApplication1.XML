@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>ConsoleApplication1</name></assembly>
+<members>
+<member name="T:Program.Assignment_1.Matching">
+<summary>
+ A type for a matching client
+</summary>
+</member>
+<member name="T:Program.Assignment_1.Person">
+<summary>
+ A type for register record (corresponding the client)
+</summary>
+</member>
+<member name="T:Program.Assignment_1.Gender">
+<summary>
+ An enumeration type for sex
+</summary>
+</member>
+<member name="M:Program.Assignment_1.getResponse(Microsoft.FSharp.Collections.FSharpList{Program.Assignment_1.Person},Program.Assignment_1.Person)">
+<summary>
+ getResponse: Person list -&gt; Person -&gt; Matching list
+
+ This function finds all the matches for a client (Person obj) in a register (list of Person obj)
+ Match for a particular client is another client from register with different sex, a deviation in
+ age less than 10 years and at least one common theme of interest.
+</summary>
+</member>
+<member name="M:Program.Assignment_1.mapToMatching(Program.Assignment_1.Person,Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Maps a person object to a Matching object (converts)
+</summary>
+</member>
+<member name="M:Program.Assignment_1.findSimilaritiesInThemes(Program.Assignment_1.Person,Program.Assignment_1.Person)">
+<summary>
+ findSimilaritiesInThemes: Person -&gt; Person -&gt; Person * string list
+
+ Find all similar themes of two clients and returns a pair (tuple) of:
+ 1) client passed as second parameter
+ 2) a list of similar themes
+</summary>
+</member>
+<member name="M:Program.Assignment_1.existsIn``1(Microsoft.FSharp.Collections.FSharpList{``0},``0)">
+<summary>
+ existsIn: &apos;a list -&gt; &apos;a -&gt; bool
+
+ Checks if a list contains an item
+</summary>
+</member>
+<member name="M:Program.Assignment_1.insertToRegister(Microsoft.FSharp.Collections.FSharpList{Program.Assignment_1.Person}@,Program.Assignment_1.Person)">
+<summary>
+ byref&lt;Person list&gt; -&gt; Person -&gt; unit
+
+ Adds a new client to the register
+</summary>
+</member>
+</members>
+</doc>
